@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            height: 98vh;
+        }
+        form{
+            background-color: #ffffff;
+            border: 1px solid white;
+            width: 40%;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            border-radius: 8px;
+        }
+        h2{
+            text-align: center;
+            font-size:  35px;
+            color:#000000;
+        }
+        
+        input{
+            width: 98%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        select{
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        /* div{
+            padding: 10px;
+        } */
+        .label-div{
+            margin-top:10px ;
+            margin-bottom:3px ;
+        }
+        button{
+            width: 100%;
+            padding: 8px 10px;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        button:hover{
+            background-color: #fff;
+            color: black;
+            border: 1px solid black;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>SignUp</h2>
+        <div class="label-div"><label for="name">Name:</label></div>
+        <div class="name-div common-box"><input type="text" id="name" placeholder="Enter your name"></div>
+
+        <div class="label-div"><label for="batch">Batch:</label></div>
+        <div class="batch-div common-box"><select id="batch">
+            <option>Select Your Batch</option>
+            <option>Sigma 1.0</option>
+            <option>Sigma 2.0</option>
+        </select></div>
+
+        <div class="label-div"><label for="number">Age:</label></div>
+        <div class="age-div common-box"><input type="number" id="number" placeholder="Enter your age"></div>
+
+        <div class="label-div"><label for="email">Email:</label></div>
+        <div class="email common-box"><input type="email" id="email" placeholder="Enter your email"></div>
+
+        <div class="label-div"><label for="password">Password:</label></div>
+        <div class="password-div common-box"><input type="password" id="password" placeholder="Enter your password"></div>
+
+        <div class="label-div"><button type="button">SignUp</button></div>
+    </form>
+</body>
+</html>

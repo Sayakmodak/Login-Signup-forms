@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            /* border: 2px solid red; */
+            background-image: url(./bg.png.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3d3c3c;
+        }
+        .container{
+            /* border: 1px solid rebeccapurple; */
+            width: 25%;
+            padding: 10px 15px;
+        }
+        .box1 h2{
+            color: #ffffff;
+            text-align: left;
+            padding-bottom: 8px;
+            font-size: 35px;
+        }
+        .common-box{
+            margin-top: 5px;
+            border-bottom: 2px solid rebeccapurple;
+            margin-bottom: 20px;
+        }
+        input{
+            width: 75%;
+            padding: 7px;
+            margin-left: 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+            margin-top: 8px;
+            /* border-bottom: 2px solid rebeccapurple; */
+        }
+        input:focus{
+            color: whitesmoke;
+            font-size: 18px;
+        }
+        i{
+            color: white;
+            font-size: 20px;
+        }
+        ::placeholder{
+            font-size: 16px;
+            color: #f1e9e9;
+        }
+        hr{
+            width: 35%;
+            border: 2px solid rebeccapurple;
+            margin-bottom: 25px;
+        }
+        button{
+            padding: 5px 10px;
+            border-color: rebeccapurple;
+            border-width: 2px;
+            border-radius: 8px;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:703px) {
+            .box1 h2{
+                font-size: 30px;
+            }
+            hr{
+                width: 55%;
+            }
+            /* input{
+                border: 1px solid red;
+            }
+            i{
+                border: 1px solid red;
+            } */
+            .container{
+                width: 35%;
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .box1 h2{
+                font-size: 30px;
+            }
+            hr{
+                width: 65%;
+            }
+            /* input{
+                border: 1px solid red;
+            } */
+            /* i{
+                border: 1px solid red;
+            } */
+            .container{
+                /* border: 1px solid red; */
+                width: 55%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="box1"><h2>LogIn</h2>
+    <hr></div>
+
+        <div class="box2 common-box">
+        <i class="fa-regular fa-envelope"></i><input type="email" placeholder="Email">
+    <!-- <hr class="for-input"> -->
+</div>
+        <div class="box3 common-box">
+        <i class="fa-solid fa-key"></i><input type="password" placeholder="Password">
+        <!-- <hr class="for-input"> -->
+    </div>
+
+    <button>Submit</button>
+   </div>
+</body>
+</html>
