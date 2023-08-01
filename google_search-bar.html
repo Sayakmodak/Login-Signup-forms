@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search-bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            background-color: #000000;
+            /* border: 1px solid red; */
+        }
+        i{
+            color: #828080;
+            margin-right: 10px;
+        }
+        .container{
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 90vh;
+            align-items: center;
+        }
+        .search-bar{
+            width: 45%;
+            border: 1px solid #bcb9b9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 10px;
+            border-radius: 50px;
+        }
+        .google-text{
+            width: 20%;
+            margin-bottom: 40px
+        }
+        .subimage{
+            width: 40px;
+        }
+        .microphone{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .input-text{
+            width: 85%;
+            height: 90%;
+            outline: none;
+            background-color: transparent;
+            color: white;
+            font-size: inherit;
+            border: none;
+        }
+        .input-text:focus{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="google-text" class="google-text">
+
+    <div class="search-bar">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    
+    <input type="text" placeholder="Search Google or type an URL" class="input-text">
+    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" alt="Microphone" class="subimage microphone">
+
+    <img src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_lens_logo_icon_159340.png" alt="Lens" class="subimage lens">
+</div>
+</section>
+
+</body>
+</html>
